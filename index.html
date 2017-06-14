@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <div id = "content-container"></div>
+    <script>
+      var selector = "#content-container";
+      var $e = document.createElement("iframe");
+      $e.src = "https://content-management-tools.herokuapp.com" + window.location.search;
+      $e.style = "width: 100%;border: none;min-height: 800px";
+      var $n = document.querySelector(selector);
+      $n.appendChild($e);
+    </script>
+  </body>
+</html>
